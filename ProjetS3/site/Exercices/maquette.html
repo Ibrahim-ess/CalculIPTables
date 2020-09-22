@@ -1,0 +1,147 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>title</title>
+        <script src="../js/jquery-1.11.3.min.js"></script>
+        <script src="../js/bootstrap.js"></script>
+        <!-- <script src="../js/npm.js"></script>-->
+        <link href="../css/bootstrap.css" rel="stylesheet">
+        <link href="../css/style_principal.css" rel="stylesheet">
+        <link rel="icon" type="../image/ico" href="../images/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta name="keywords" content="TCP/IP, Excercices, corrigés">
+        <meta name="description" content="Site d'exercices corrigés autour de TCP/IP: masques, CIDR, tables de routage etc.">
+    </head>
+    <body>
+        <header>
+           <nav class="navbar navbar-default navbar-static-top ">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php" ></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav">
+                <li><a href="../index.php">Accueil</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cours<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../Cours.php">Cours</a></li>
+                        <li><a href="../Memos/">Memos</a></li> 
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Exercices<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                            <li><a href="../Exercices/AnalyseTrame.php">Analyse de trame</a></li>
+                            <li><a href="../Exercices/Conversion.php">Conversions <i><sub><small>Binaire, Hexadécimal et Décimal</small></sub></i></a></li>
+                            <li><a href="../Exercices/TrouverClasse.php">Classe IP <i><sub><small>Trouver la classe correspondante</small></sub></i></a></li>
+                            <li><a href="../Exercices/TrouverClasseInverse.php">Classe IP <i><sub><small>Trouver l'IP correspondante</small></sub></i></a></li>
+                            <li><a href="../Exercices/Masque.php">Masque (niveau S3)</a></li>
+                            <li><a href="../Exercices/NotationCIDRS2.php">Notation CIDR (niveau S2)</a></li>
+                            <li><a href="../Exercices/NotationCIDR.php">Notation CIDR (niveau S3)</a></li>
+                            <li><a href="../Exercices/PrefixeMaxFacile.php">Préfixe max (S3)<i>
+<sub><small>Presque Facile</small></sub></i></a></li>
+                            <li><a href="../Exercices/PrefixeMaxDifficile.php">Préfixe max (S3) <i><sub><small>plus Difficile</small></sub></i></a></li>
+                            <li><a href="../Exercices/SousReseaux.php">Calcul de sous-réseaux (S3)</a></li>
+                            <li><a href="../Exercices/StructureTrame.php">Structure d'une trame</a></li>
+                           <li><a href="../Exercices/TableRoutage.php">Table de Routage (S2,S3)</a></li>
+                    </ul>
+                </li>
+                <li><a href="../news.php">Nouveautés</a></li>
+                <li><a href="../quiSommesNous.php">Qui sommes-nous ?</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                    <li><a href="?login=">Se connecter</a></li>
+            </ul>
+            
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<ol class="breadcrumb">
+        <li><a href="/CalculIP/index.php">Accueil</a></li>
+        <li><a href="/CalculIP/index.php">CalculIP</a></li>
+        <li class="active">Iptables</li>
+
+</ol>
+
+
+        </header>
+
+
+
+
+        <div class="container">
+            <h1>IpTables </h1>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Exercice</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="lead bg-info well">
+                        <p>Soit une entreprise qui utiise des adresses privée[...]</p>
+                        <p>On veux assurer les éléments suivants:</p>
+                     </div>
+                     <div class="panel panel-default">
+                        <div class="lead bg-info well">
+                            <h3 class="panel-title">Niveau 1:</h3>
+                        </div>
+                        <div class="panel-body">
+                    <div class="lead bg-info well">
+                        <p>Tout ce qui n’est pas autorisé est interdit.</p>
+                        <br>
+                        <h3 class="panel-title">iptables -P 
+                            <select>
+                                <option>INPUT</option>
+                                <option>FORWARD</option>
+                                <option>OUTPUT</option>
+                            </select> 
+                        DROP</h3>
+                        <br>
+                        <h3 class="panel-title">iptables 
+                            <select>
+                                <option>-d</option>
+                                <option>-A</option>
+                                <option>-P</option>
+                                <option>-s</option>
+                            </select>  
+                        OUTPUT DROP</h3>
+                        <br>
+                        <h3 class="panel-title">iptables -P INPUT 
+                            <select>
+                                <option>DROP</option>
+                                <option>ACCEPT</option>
+                                <option>LOG</option>
+                                <option>REJECT</option>
+                            </select> </h3>
+                     </div>
+                     </div>
+                    </div> 
+                </div>
+                <center>
+                    <input type="button" value="Valider">
+                    <input type="button" value="Voir réponse">
+                </center>
+            </div>
+        </div>
+
+
+
+        <footer class="footer text-center">
+            <div>
+                <img class="img_footer" style="float: left;left: 0;" src="images/IUT_Villetaneuse_Logo.png" alt="logo iut villetaneuse"/>
+                <img class="img_footer" style="float: right;right: 0;" src="images/Logo-UP13-noirS.png" alt="logo université paris 13"/>
+            </div>
+            <div class="container">
+                <p class="text-muted">GPL v3</p>
+            </div>
+        </footer>
+    </body>
+</html>

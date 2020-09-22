@@ -1,0 +1,165 @@
+/* MENU */
+
+.navbar-default {
+    background-color: #EEE;
+    border-color: #EEE;
+}
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #050505;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.navbar-default .navbar-nav > .active > a {
+    color: #000;
+}
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    color: #FF2525;
+    border-color: #DF0505;
+    transition: all ease-in-out 0.2s;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #FF2525;
+    border-color: #DF0505;
+    transition: all ease-in-out 0.2s;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #000;
+    background-color: #FF2525;
+    transition: all ease-in-out 0.4s;
+}
+.navbar-default .navbar-nav > .active > a {
+    background-color: transparent;
+}
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eee;
+}
+.navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 50px;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 10px 25px;
+    border-bottom: 5px solid #E0E0E0
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: transparent;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px;
+}
+.navbar-default .navbar-brand {
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: center;
+    list-style: none;
+    background-color: #EEE;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 0px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    top: 70px; /* Pour les navigateurs incompétents */
+}
+.dropdown-menu > li > a {
+    display: block;
+    padding: 7px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #050505;
+    white-space: nowrap;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #FF2525;
+    text-decoration: none;
+    background-color: #FFF;
+}
+.dropdown-menu .divider {
+    height: 3px;
+    margin: 0px 0;
+    overflow: hidden;
+    background-color: #E0E0E0;
+}
+.navbar-nav .open .dropdown-menu {
+    
+    background-color: #FFF;
+}
+@media (min-width: 768px) {
+    .navbar-nav .open .dropdown-menu {
+        background-color: #EEE;
+    }
+    .navbar-static-top {
+        z-index: 1000;
+        border-width: 0 0 0px 0;
+        box-shadow: inset 0px -5px 0px 0px #E0E0E0;
+    }
+    .navbar-brand {
+        float: left;
+        height: 50px;
+        padding: 10px 25px;
+        font-size: 18px;
+        line-height: 50px;
+    }
+    .dropdown-menu {
+        position: absolute;
+        left: 0;
+        min-width: 160px;
+        padding: 0;
+        margin: 2px 0 0;
+        font-size: 14px;
+        text-align: center;
+        background-color: #EEE;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+        border: 0px solid #ccc;
+        border: 0px solid rgba(0, 0, 0, .15);
+        border-radius: 4px;
+        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+        top: 70px;
+    }
+}
+
+
+* {
+  -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+.btn {
+    transition: all ease-in-out 0.2s;
+}
+
